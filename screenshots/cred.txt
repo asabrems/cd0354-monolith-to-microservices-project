@@ -1,0 +1,21 @@
+# This file is used for convenience of local development.
+# DO NOT STORE YOUR CREDENTIALS INTO GIT
+export POSTGRES_USERNAME=bremangdev
+export POSTGRES_PASSWORD=chickensoup
+export POSTGRES_HOST=bremangdev.csd1cnrmvo5n.us-east-1.rds.amazonaws.com
+export POSTGRES_DB=postgres
+export AWS_BUCKET=mybremangbucket
+export AWS_REGION=us-east-1
+export AWS_PROFILE=default
+export JWT_SECRET=testing
+export URL=http://localhost:8100
+
+8558@!#$):"
+
+
+key = K+61zAnJ0PTz6+VJqO5GlgIR8psxUykQ8CgqqIeN
+id = AKIAWVTBXUQ4SBTQKWP6
+
+
+frontend a3eb088c5641b4cf5a9f614967a13ec9-1678704343.us-east-2.elb.amazonaws.com 
+reverseproxy == ae1ce3d57b8e54160bb02d381c26d9e4-835216623.us-east-2.elb.amazonaws.com 

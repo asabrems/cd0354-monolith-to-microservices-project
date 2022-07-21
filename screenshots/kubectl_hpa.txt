@@ -1,0 +1,2 @@
+$ kubectl describe hpa
+No resources found in default namespace.

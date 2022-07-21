@@ -1,0 +1,22 @@
+freea@asantewaa MINGW64 ~/Desktop/code/cd0354-monolith-to-microservices-project (microserves)
+$ kubectl logs backend-feed-5f4b4f6c5d-kdpfv
+
+> udagram-api@2.0.0 prod /usr/src/app
+> tsc && node ./www/server.js
+
+Initialize database connection...
+(node:37) UnhandledPromiseRejectionWarning: SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:5432
+    at Client._connectionCallback (/usr/src/app/node_modules/sequelize/lib/dialects/postgres/connection-manager.js:170:24)
+    at Client._handleErrorWhileConnecting (/usr/src/app/node_modules/pg/lib/client.js:305:19)
+    at Client._handleErrorEvent (/usr/src/app/node_modules/pg/lib/client.js:315:19)
+    at Connection.emit (events.js:314:20)
+    at Connection.EventEmitter.emit (domain.js:483:12)
+    at Socket.reportStreamError (/usr/src/app/node_modules/pg/lib/connection.js:52:12)
+    at Socket.emit (events.js:314:20)
+    at Socket.EventEmitter.emit (domain.js:483:12)
+    at emitErrorNT (internal/streams/destroy.js:92:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+(node:37) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 1)
+(node:37) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+
