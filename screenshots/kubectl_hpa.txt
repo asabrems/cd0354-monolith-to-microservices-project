@@ -1,2 +1,4 @@
-$ kubectl describe hpa
-No resources found in default namespace.
+freea@asantewaa MINGW64 ~/Desktop/code/cd0354-monolith-to-microservices-project/k_deployment (microserves)
+$ kubectl get hpa
+NAME    REFERENCE          TARGETS         MINPODS   MAXPODS   REPLICAS   AGE
+hpa-v   Deployment/hpa-v   <unknown>/50%   1         2         0          42s

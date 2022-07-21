@@ -1,23 +1,8 @@
+freea@asantewaa MINGW64 ~/Desktop/code/cd0354-monolith-to-microservices-project/k_deployment (microserves)
 $ kubectl get pods
-NAME                            READY   STATUS      RESTARTS      AGE
-backend-feed-dd65bbd85-v65nz    0/1     Completed   1 (39s ago)   65s
-backend-feed-dd65bbd85-zn7v7    0/1     Completed   1 (41s ago)   66s
-backend-user-865d4fc4d5-89rzz   1/1     Running     1 (10s ago)   42s
-backend-user-865d4fc4d5-ktw4w   1/1     Running     1 (12s ago)   43s
-frontend-6b74f4f889-5r482       1/1     Running     0             12m
-frontend-6b74f4f889-9kgd6       1/1     Running     0             12m
-reverseproxy-78bd7d9fdc-bb2gj   1/1     Running     0             13m
-reverseproxy-78bd7d9fdc-nv9ct   1/1     Running     0             13m
-
-
-$ kubectl get pods -o wide
-NAME                            READY   STATUS             RESTARTS         AGE    IP               NODE                                           NOMINATED NODE   READINESS GATES
-backend-feed-5f4b4f6c5d-bzb87   0/1     CrashLoopBackOff   10 (4m11s ago)   39m    192.168.49.114   ip-192-168-54-181.us-east-2.compute.internal   <none>           <none>
-backend-feed-5f4b4f6c5d-kdpfv   0/1     CrashLoopBackOff   10 (3m56s ago)   39m    192.168.87.26    ip-192-168-82-182.us-east-2.compute.internal   <none>           <none>
-backend-user-5798475594-8x8tm   1/1     Running            10 (5m31s ago)   35m    192.168.41.20    ip-192-168-54-181.us-east-2.compute.internal   <none>           <none>
-backend-user-5798475594-kx2s7   1/1     Running            10 (5m43s ago)   35m    192.168.72.176   ip-192-168-82-182.us-east-2.compute.internal   <none>           <none>
-frontend-5668f9589-42m8j        1/1     Running            0                91m    192.168.81.186   ip-192-168-82-182.us-east-2.compute.internal   <none>           <none>
-frontend-5668f9589-gp4hg        1/1     Running            0                91m    192.168.42.69    ip-192-168-54-181.us-east-2.compute.internal   <none>           <none>
-reverseproxy-8955dc958-2wpnd    1/1     Running            0                109m   192.168.78.117   ip-192-168-82-182.us-east-2.compute.internal   <none>           <none>
-reverseproxy-8955dc958-7nsh7    1/1     Running            0                109m   192.168.43.200   ip-192-168-54-181.us-east-2.compute.internal   <none>           <none>
+NAME                            READY   STATUS    RESTARTS      AGE
+backend-feed-5f4b4f6c5d-wmtwn   1/1     Running   1 (21s ago)   98s
+backend-user-5798475594-2llxn   1/1     Running   0             73s
+frontend-5668f9589-jrjw8        1/1     Running   0             50s
+reverseproxy-8955dc958-sxbwm    1/1     Running   0             31s
 

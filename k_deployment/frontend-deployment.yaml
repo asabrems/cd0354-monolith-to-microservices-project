@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: frontend
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       run: frontend
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: docker.io/adwoabrems/udagram-frontend:v4
+        image: docker.io/adwoabrems/udagram-frontend:v5
         ports:
         - containerPort: 80
         resources:

@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: backend-feed
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       run: backend-feed
@@ -19,6 +19,6 @@ spec:
         - containerPort: 80
         resources:
           limits:
-            cpu: 500m
+            cpu: 1000m
           requests:
-            cpu: 200m
+            cpu: 500m
