@@ -1,8 +1,0 @@
-freea@asantewaa MINGW64 ~/Desktop/code/cd0354-monolith-to-microservices-project/k_deployment (microserves)
-$ kubectl get pods
-NAME                            READY   STATUS    RESTARTS      AGE
-backend-feed-5f4b4f6c5d-wmtwn   1/1     Running   1 (21s ago)   98s
-backend-user-5798475594-2llxn   1/1     Running   0             73s
-frontend-5668f9589-jrjw8        1/1     Running   0             50s
-reverseproxy-8955dc958-sxbwm    1/1     Running   0             31s
-

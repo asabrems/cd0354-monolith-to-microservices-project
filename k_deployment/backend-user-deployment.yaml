@@ -22,4 +22,24 @@ spec:
             cpu: 1000m
           requests:
             cpu: 500m
+        env:
+        - name: POSTGRES_USERNAME
+          value: bremangdev
+        - name: POSTGRES_PASSWORD
+          value: chickensoup
+        - name: POSTGRES_HOST
+          value: bremangdev.ckql2yblqles.us-east-1.rds.amazonaws.com
+        - name: POSTGRES_DB
+          value: postgres
+        - name: AWS_BUCKET
+          value: mybremangbucket
+        - name: AWS_REGION
+          value: us-east-1
+        - name: AWS_PROFILE
+          value: default
+        - name: JWT_SECRET
+          value: testing
+        - name: URL
+          value: 'http://a3a5a5db481ed4577b47bb4503ecce49-659290114.us-east-2.elb.amazonaws.com'
+
         
