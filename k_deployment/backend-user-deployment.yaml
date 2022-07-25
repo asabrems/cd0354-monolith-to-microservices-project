@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: backend-user
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       run: backend-user
@@ -40,6 +40,6 @@ spec:
         - name: JWT_SECRET
           value: testing
         - name: URL
-          value: 'http://a3a5a5db481ed4577b47bb4503ecce49-659290114.us-east-2.elb.amazonaws.com'
+          value: http://localhost:8100
 
         
